@@ -1,10 +1,11 @@
 #include <stdio.h>
 void f(void);
 
-int i; // 같은 전역변수
+//int i; //같은 전역변수
 
 int main(void)
 {
+    int i =0;
     for(i = 0; i < 5; i++){
         f();
     }
@@ -13,6 +14,7 @@ int main(void)
 
 void f(void)
 {
+    int i = 0;
     for(i = 0; i < 10; i ++)
         printf("#");
 }
