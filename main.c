@@ -1,7 +1,7 @@
 #include <stdio.h>
 void f(void);
 
-int i;
+int i; // 같은 전역변수
 
 int main(void)
 {
